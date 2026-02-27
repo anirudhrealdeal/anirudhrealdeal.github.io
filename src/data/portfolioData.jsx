@@ -179,12 +179,12 @@ export const skills = {
     { name: "React Native", icon: <FaReact /> },
   ],
   toolsAndPlatforms: [
-    { name: "MongoDB", icon: <SiMongodb /> },
-    { name: "Firebase", icon: <SiFirebase /> },
-    { name: "Google Cloud", icon: <SiGooglecloud /> },
     { name: "Git & GitHub", icon: <FaGithub /> },
+    { name: "MongoDB", icon: <SiMongodb /> },
+    { name: "n8n", icon: <FaCode /> },
     { name: "Postman", icon: <SiPostman /> },
-    { name: "VS Code", icon: <FaCode /> },
+    { name: "Google Cloud", icon: <SiGooglecloud /> },
+    { name: "Firebase", icon: <SiFirebase /> },
   ],
   coreCompetencies: [
     "Presentations",
