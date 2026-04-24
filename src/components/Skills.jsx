@@ -1,38 +1,62 @@
 import React from "react";
 import SectionTitle from "./SectionTitle";
 import { skills } from "../data/portfolioData";
-import { motion } from "framer-motion";
+import { 
+  FaCode, 
+  FaDatabase, 
+  FaJava,
+  FaGithub
+} from "react-icons/fa";
+import { 
+  SiJavascript, 
+  SiCplusplus, 
+  SiReact,
+  SiPostman,
+  SiGooglecloud,
+  SiFirebase
+} from "react-icons/si";
 
-const SkillCategory = ({ title, items, delayOffset }) => (
-  <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ delay: delayOffset, duration: 0.5 }}
-    className="w-full" // Ensure it takes full width
-  >
-    {/* Category Title */}
+const iconMap = {
+  FaCode,
+  FaDatabase,
+  FaJava,
+  FaGithub,
+  SiJavascript,
+  SiCplusplus,
+  SiReact,
+  SiPostman,
+  SiGooglecloud,
+  SiFirebase,
+};
+
+const SkillCategory = ({ title, items, showIcons = true }) => (
+  <div className="w-full">
     <h3 className="text-2xl md:text-3xl font-semibold text-accent-1 mb-8 flex items-center gap-4">
       <span className="h-[2px] w-12 bg-accent-1/50 inline-block"></span>
       {title}
     </h3>
 
-    {/* Skills Container - Flex Wrap for row layout */}
     <div className="flex flex-wrap gap-5">
-      {items.map((skill, index) => (
-        <motion.div
-          key={index}
-          whileHover={{ scale: 1.05, y: -5 }}
-          className="flex items-center gap-4 bg-secondary-bg px-6 py-4 rounded-md border border-white/5 hover:border-accent-2/50 hover:shadow-[0_4px_20px_rgba(233,69,96,0.15)] transition-all duration-300 cursor-default"
-        >
-          <span className="text-3xl text-accent-1">{skill.icon}</span>
-          <span className="text-text-primary text-lg font-medium">
-            {skill.name}
-          </span>
-        </motion.div>
-      ))}
+      {items.map((skill, index) => {
+        const IconComponent = showIcons ? iconMap[skill.icon] : null;
+        return (
+          <div
+            key={index}
+            className="flex items-center gap-4 bg-secondary-bg px-6 py-4 rounded-md border border-white/5 hover:border-accent-2/50 hover:shadow-[0_4px_20px_rgba(233,69,96,0.15)] transition-all duration-300 cursor-default"
+          >
+            {IconComponent && (
+              <span className="text-3xl text-accent-1">
+                <IconComponent />
+              </span>
+            )}
+            <span className="text-text-primary text-lg font-medium">
+              {skill.name}
+            </span>
+          </div>
+        );
+      })}
     </div>
-  </motion.div>
+  </div>
 );
 
 const Skills = () => {
@@ -50,27 +74,20 @@ const Skills = () => {
             <SkillCategory
               title="Languages"
               items={skills.languages}
-              delayOffset={0.1}
             />
             <SkillCategory
               title="Frameworks & Libraries"
               items={skills.frameworksAndLibraries}
-              delayOffset={0.2}
+              showIcons={false}
             />
             <SkillCategory
               title="Tools & Platforms"
               items={skills.toolsAndPlatforms}
-              delayOffset={0.3}
             />
           </div>
 
           {/* Core Competencies as Tags */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="mt-24 text-center"
-          >
+          <div className="mt-24 text-center">
             <h3 className="text-lg font-mono text-accent-2 mb-8 tracking-widest uppercase">
               Core Competencies
             </h3>
@@ -85,7 +102,7 @@ const Skills = () => {
                 </span>
               ))}
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

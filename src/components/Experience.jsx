@@ -1,7 +1,7 @@
 import React from "react";
+import { motion } from "framer-motion";
 import SectionTitle from "./SectionTitle";
 import { experience } from "../data/portfolioData";
-import { motion } from "framer-motion";
 
 const Experience = () => {
   return (

@@ -62,6 +62,25 @@ const Hero = () => {
       />
 
       <div className="container mx-auto px-6 relative z-10 text-center">
+        {/* Profile Photo */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.1, type: "spring", stiffness: 120 }}
+          className="flex justify-center mb-8 mt-20 sm:mt-24"
+        >
+          <div className="relative w-36 h-36 sm:w-44 sm:h-44">
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-accent-1 to-accent-2 p-[2px]">
+              <img
+                src="/portfolio_image.png"
+                alt="Anirudh Kumar"
+                className="w-full h-full rounded-full object-cover"
+              />
+            </div>
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-accent-1/30 to-accent-2/30 blur-xl -z-10" />
+          </div>
+        </motion.div>
+
         {/* Greeting */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -87,16 +106,17 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="h-20 sm:h-24 md:h-28" // Fixed height to prevent layout shift
+          className="min-h-[80px] sm:min-h-[120px] md:min-h-[160px] pb-4"
         >
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-text-secondary mb-8">
             I{" "}
             <Typewriter
               texts={[
-                "build digital experiences.",
-                "build things for the web.",
-                "solve real-world problems.",
-                "love innovation.",
+                "build clinical AI systems.",
+                "build OCR and LLM pipelines.",
+                "solve healthcare risk challenges.",
+                "work with trustworthy ML systems.",
+                "love problem solving.",
               ]}
             />
           </h2>

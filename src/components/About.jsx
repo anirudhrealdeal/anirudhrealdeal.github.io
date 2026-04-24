@@ -1,7 +1,7 @@
 import React from "react";
+import { motion } from "framer-motion";
 import SectionTitle from "./SectionTitle";
 import { education } from "../data/portfolioData.jsx";
-import { motion } from "framer-motion";
 import { FaGraduationCap } from "react-icons/fa";
 
 const About = () => {
@@ -21,18 +21,11 @@ const About = () => {
             <span className="text-accent-1 font-mono text-2xl mr-2">
               Hello!
             </span>
-            I'm Aditi, a driven Full Stack Developer with a strong foundation in
-            computer science and a knack for crafting efficient, user-centric
-            applications. My journey into tech is fueled by a desire to learn,
-            innovate, and contribute to projects that make a difference. I
-            thrive in collaborative environments and am always excited to tackle
-            new challenges.
+            I'm Anirudh - a research-driven AI/ML engineer at the intersection of applied machine learning and academic research. With 2+ years of industry experience, two pending patents, and publications at INTERSPEECH 2024 and Springer, I'm pursuing an MSE in CIS at UPenn (3.9 GPA). As a former RA at Penn Medicine's HanLab, I built a self-supervised VLM pipeline on 400K+ unannotated chest X-rays. At IDfy, I scaled VehiClear to 10M+ records and shipped an OCR pipeline with 99.7% accuracy. At IISc, my deep learning models for syllable detection outperformed human listeners by up to 50%.
           </p>
         </motion.div>
 
-        <h3 className="text-2xl font-bold text-accent-1 mb-10 font-mono flex items-center">
-          <span className="mr-4 text-3xl">/</span> Education History
-        </h3>
+        <SectionTitle>Education History</SectionTitle>
 
         {/* New Education Layout: Minimal "Tech List" style */}
         <div className="space-y-4">

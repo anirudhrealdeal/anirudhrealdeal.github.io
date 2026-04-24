@@ -1,7 +1,8 @@
 import React from "react";
-import SectionTitle from "./SectionTitle";
-import { personalInfo } from "../data/portfolioData";
 import { motion } from "framer-motion";
+import SectionTitle from "./SectionTitle";
+import { FaEnvelope, FaPhone } from "react-icons/fa";
+import { personalInfo } from "../data/portfolioData";
 
 const Contact = () => {
   return (
@@ -24,17 +25,34 @@ const Contact = () => {
           Get In Touch
         </h2>
         <p className="text-text-secondary text-lg mb-10 leading-relaxed">
-          I am currently looking for new opportunities and my inbox is always
-          open. Whether you have a question or just want to say hi, I'll try my
-          best to get back to you!
+          I am currently looking for Summer 2026 AI/ML engineering, Software Engineering, or research internships in the US. Whether you have an opportunity or just want to say hi, my inbox is always open!
         </p>
 
         <a
           href={`mailto:${personalInfo.email}`}
-          className="inline-block px-10 py-4 border-2 border-accent-1 text-accent-1 font-bold rounded-md hover:bg-accent-1/10 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-accent-1/20"
+          className="inline-block px-10 py-4 border-2 border-accent-1 text-accent-1 font-bold rounded-md hover:bg-accent-1/10 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-accent-1/20 mb-10"
         >
           Say Hello
         </a>
+
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-10">
+          <a
+            href={`mailto:${personalInfo.email}`}
+            className="flex items-center gap-3 text-text-secondary hover:text-accent-1 transition-colors font-mono text-sm"
+          >
+            <FaEnvelope size={16} className="text-accent-1" />
+            {personalInfo.email}
+          </a>
+          {personalInfo.phone && (
+            <a
+              href={`tel:${personalInfo.phone}`}
+              className="flex items-center gap-3 text-text-secondary hover:text-accent-1 transition-colors font-mono text-sm"
+            >
+              <FaPhone size={16} className="text-accent-1" />
+              {personalInfo.phone}
+            </a>
+          )}
+        </div>
       </motion.div>
     </section>
   );
