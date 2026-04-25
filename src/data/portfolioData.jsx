@@ -28,7 +28,7 @@ export const personalInfo = {
   title: "AI/ML Engineer & Researcher",
   email: "anirudhchaks23@gmail.com",
   phone: "+1 445 209 1764",
-  linkedin: "https://linkedin.com/in/anirudhchakravartykumar",
+  linkedin: "https://www.linkedin.com/in/anirudh-chakravarty-kumar-75308a233/",
   github: "https://github.com/anirudhrealdeal",
   resumeLink: "/AnirudhKumarResume.pdf",
   bio: "AI/ML engineer and researcher with 2+ years of industry experience, two pending patents, and publications at INTERSPEECH 2024 and Springer. Pursuing an MSE in CIS at UPenn (3.9 GPA) and a former RA at Penn Medicine's HanLab. Actively seeking Summer 2026 internships.",
@@ -70,7 +70,7 @@ export const projects = [
       </>,
     ],
     date: "2025",
-    githubLink: "https://github.com/anirudhrealdeal",
+    githubLink: "https://github.com/anirudhrealdeal/RA_ChexZeroVariant",
     category: "Research & AI",
     icon: <FaCode size={24} className="text-accent-1" />,
   },
@@ -131,13 +131,14 @@ export const projects = [
     tech: ["Python", "PyTorch", "Speech ML", "Biomedical AI"],
     description: [
       <>
-        Co-authored INTERSPEECH 2024 paper on ALS speech diagnostics where
-        developed models outperformed human listeners by up to 50% in absolute
-        accuracy.
+        Co-authored INTERSPEECH 2024 paper on ALS speech diagnostics, building
+        deep learning models for syllable detection during diadochokinetic tasks
+        that outperformed human listeners by up to 50% in absolute accuracy.
       </>,
       <>
-        Built advanced speech processing and machine learning pipelines for
-        neurological disease detection and monitoring.
+        Built speech processing pipelines for neurological disease detection,
+        classifying syllable discriminability across increasing ALS dysarthria
+        severity levels.
       </>,
       <>
         Published research demonstrating superior performance of AI systems
@@ -314,7 +315,7 @@ export const experience = [
     duration: "Jan 2024 – May 2025",
     points: [
       "Built and scaled India's largest vehicle intelligence platform (10M+ records, 220M+ entries); co-founded VehiClear, delivering vehicle legal/blacklist intelligence via production APIs (patent pending).",
-      "Led LLM and applied ML initiatives, building OCR and line-detection pipelines that achieved 99.7% extraction accuracy across 220M+ records, addressing a core data extraction bottleneck that had persisted across prior systems for over 5 years.",
+      "Shipped an OCR + line-detection system achieving 99.7% extraction accuracy on legal history documents of all kinds, solving a problem that had blocked prior teams for 5+ years; extended its use case to the vehicle intelligence platform.",
       "Designed regex-driven extraction and post-correction logic for registration certificates, supporting risk workflows for underwriting, insurance, and vehicle verification.",
     ],
   },

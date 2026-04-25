@@ -37,8 +37,8 @@ const Projects = () => {
                   {project.additionalImages && project.additionalImages.length > 0 && (
                     <div className="flex gap-3 mt-3">
                       {project.additionalImages.map((img, i) => (
-                        <div key={i} className="flex-1 rounded-md overflow-hidden border border-white/10 hover:border-accent-1/30 transition-all duration-300">
-                          <img src={img} alt={`${project.title} ${i + 2}`} className="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-500" />
+                        <div key={i} className={`${i === 0 ? "flex-[1]" : "flex-[2]"} rounded-md overflow-hidden border border-white/10 hover:border-accent-1/30 transition-all duration-300`}>
+                          <img src={img} alt={`${project.title} ${i + 2}`} className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
                         </div>
                       ))}
                     </div>
