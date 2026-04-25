@@ -7,13 +7,20 @@ import {
   FaJava,
   FaGithub
 } from "react-icons/fa";
-import { 
-  SiJavascript, 
-  SiCplusplus, 
+import {
+  SiJavascript,
+  SiCplusplus,
   SiReact,
   SiPostman,
   SiGooglecloud,
-  SiFirebase
+  SiFirebase,
+  SiPython,
+  SiDocker,
+  SiKubernetes,
+  SiNvidia,
+  SiPytorch,
+  SiNumpy,
+  SiMysql,
 } from "react-icons/si";
 
 const iconMap = {
@@ -27,6 +34,13 @@ const iconMap = {
   SiPostman,
   SiGooglecloud,
   SiFirebase,
+  SiPython,
+  SiDocker,
+  SiKubernetes,
+  SiNvidia,
+  SiPytorch,
+  SiNumpy,
+  SiMysql,
 };
 
 const SkillCategory = ({ title, items, showIcons = true }) => (

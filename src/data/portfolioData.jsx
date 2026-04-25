@@ -230,11 +230,11 @@ export const projects = [
 
 export const skills = {
   languages: [
-    { name: "Python", icon: "FaCode" },
+    { name: "Python", icon: "SiPython" },
     { name: "C/C++", icon: "SiCplusplus" },
     { name: "Java", icon: "FaJava" },
     { name: "JavaScript", icon: "SiJavascript" },
-    { name: "MySQL", icon: "FaDatabase" },
+    { name: "MySQL", icon: "SiMysql" },
     { name: "Node.js", icon: "SiJavascript" },
     { name: "React.js", icon: "SiReact" },
     { name: "ElasticSearch", icon: "FaDatabase" },
@@ -267,10 +267,10 @@ export const skills = {
   ],
   toolsAndPlatforms: [
     { name: "Git & GitHub", icon: "FaGithub" },
-    { name: "Docker", icon: "FaCode" },
-    { name: "Kubernetes", icon: "FaCode" },
+    { name: "Docker", icon: "SiDocker" },
+    { name: "Kubernetes", icon: "SiKubernetes" },
     { name: "SLURM", icon: "FaCode" },
-    { name: "A100 GPU", icon: "FaCode" },
+    { name: "A100 GPU", icon: "SiNvidia" },
     { name: "Postman", icon: "SiPostman" },
     { name: "Google Cloud", icon: "SiGooglecloud" },
     { name: "Firebase", icon: "SiFirebase" },
