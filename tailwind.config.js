@@ -7,13 +7,13 @@ export default {
   ],
   theme: {
     extend: {
-      colors: { // Your existing colors
-        'primary-bg': '#1a1a2e',
-        'secondary-bg': '#16213e',
-        'accent-1': '#9d4edd',
-        'accent-2': '#c77dff',
-        'text-primary': '#e0e0e0',
-        'text-secondary': '#a0a0a0',
+      colors: {
+        'primary-bg': '#0f0f0f',
+        'secondary-bg': '#1a1a1a',
+        'accent-1': '#9333ea',
+        'accent-2': '#c084fc',
+        'text-primary': '#f0f0f0',
+        'text-secondary': '#9ca3af',
       },
       fontFamily: {
         // MODIFICATION: Set JetBrains Mono as the default sans-serif font
