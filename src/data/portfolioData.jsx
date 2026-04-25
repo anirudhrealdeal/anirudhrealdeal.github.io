@@ -151,7 +151,7 @@ export const projects = [
     paperLink: "https://www.isca-archive.org/interspeech_2024/samptur24_interspeech.pdf",
   },
   {
-    title: "VehiClear OCR & Risk Intelligence (IDfy)",
+    title: "VehiClear & OCR Extraction Pipelines",
     tech: ["OCR", "LLMs", "Python", "Data Engineering", "Production AI"],
     description: [
       <>
